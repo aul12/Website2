@@ -13,7 +13,7 @@ am also responsible for the software structure and the computer infrastructure.
 
 # RoboCup Junior
 From 2011 to 2016 i participated in [RoboCup Junior](https://junior.robocup.org/about/) (Soccer-Open League), with Team "Bodenseehaie" as the software team lead.
-In 2015 we won the german championship and participated at the worldcup in Hefei, China. In 2016 the overall worldcup with our self developed robots.
+In 2015 we won the german championship and participated at the worldcup in Hefei, China. In 2016 we won the overall worldcup with our self developed robots.
 ![RoboCup](../assets/img/robocup.jpg "RoboCup")
 
 # SerialToolbox
