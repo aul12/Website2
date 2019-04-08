@@ -21,12 +21,12 @@ permalink: /uni/
 ### Tools und nützliche Programme
  * [Algorithmus von Quine und McCluskey (Logikminimierung)](https://github.com/aul12/QuineMcCluskey)
  * [Pseudocode aus JS Code](https://github.com/aul12/Pseudify)
- * [Konverter für verschiedene Basen und IEEE-754 (float), aktuell nicht funktionsfähig](https://github.com/aul12/HexToDecToBinToAsciiToAnything)
+ * [Konverter für verschiedene Basen und IEEE-754 (float)](https://github.com/aul12/HexToDecToBinToAsciiToAnything)
 
 ## Elektrotechnik
  * [Software für den praktischen Teil der Vorlesung praktischer Einstieg in die Elektronikentwicklung](https://github.com/aul12/ARDF-Firmware)
  * [Praktikumsberichte GPET](https://github.com/aul12/Praktikumsberichte-GPET)
 
-## Mathemtaik
- * [Programm zur Generierung von Plots](https://github.com/aul12/PlotStuff)
+## Mathematik
  * [Zusammenfassung: Höhere Mathematik](https://github.com/aul12/hmZusammenfassung)
+ * [Programm zur Generierung von Plots](https://github.com/aul12/PlotStuff)

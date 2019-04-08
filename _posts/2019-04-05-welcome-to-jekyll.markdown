@@ -1,25 +1,10 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "New website!"
 date:   2019-04-05 22:27:45 +0200
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+As you might have guessed after visiting this site i have a completly new website! After i had more or less abandonded my old website (i still believe the concept is really cool, so it still is available at [aul12.me/old](aul12.me/old)) i tried to develop a new website from scratch but pretty soon realized i'm not a designer. So in the third iteration i started using [Jekyll](https://jekyllrb.com/) as a static site generator.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+#### My old website:
+![Old Website](../../../../../assets/img/old_website.png)

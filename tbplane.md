@@ -5,12 +5,15 @@ permalink: /tbplane/
 ---
 
 ## Developing an autonomous plane
+A friend and i decided to develop and build our own flightcontrol platform for a model airplane.  
+We started the project in 2017 and already had multiple test flights to test different components.
+Our long term goal is a fully autonomous long distance flight.
 ![Toolbox Plane](../assets/img/plane.jpg "Toolbox Plane")
 
 
 ## Plane
 
-| The autonomous plane is build using a X-UAV Mini Talon remote controller airplane. | ![Mini Talon](../assets/img/talon.jpg "Mini Talon") |
+| The autonomous plane is build using a X-UAV Mini Talon remote controlled airplane. The airplane has a wing span of 1.3m and much space on the inside which gives us a greater flexibility when choosing and designing our electronics.| ![Mini Talon](../assets/img/talon.jpg "Mini Talon") |
 
 
 ## Flightcontroller
