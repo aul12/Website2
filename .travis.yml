@@ -1,0 +1,5 @@
+deploy:
+  provider: script
+  script: wget aul12.me/update.php
+  on:
+    branch: master
