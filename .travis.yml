@@ -2,6 +2,6 @@ language: minimal
 
 deploy:
   provider: script
-  script: wget aul12.me/update.php
+  script: curl -vs aul12.me/update.php 2>&1
   on:
     branch: master
