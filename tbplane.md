@@ -13,16 +13,16 @@ Our long term goal is a fully autonomous long distance flight.
 
 ## Plane
 
-| The autonomous plane is build using a X-UAV Mini Talon remote controlled airplane. The airplane has a wing span of 1.3m and much space on the inside which gives us a greater flexibility when choosing and designing our electronics.| ![Mini Talon](../assets/img/talon.jpg "Mini Talon") |
+| The autonomous plane is build using a X-UAV Mini Talon remote controlled airplane. The airplane has a wing span of 1.3m and much space on the inside which gives us a greater flexibility when choosing and designing our electronics. It is powered by an electric motor in the rear, a LiPo-Battery provides enough charge for long flights. | ![Mini Talon](../assets/img/talon.jpg "Mini Talon") |
 
 
 ## Flightcontroller
 
-| ![Flightcontroller](../assets/img/flightcontroller.jpg "Flightcontroller") | At the heart of our plane is our self-developed flight controller. It is based around a Nucleo-L432KC development board, a Bosch BNO-055 IMU and a NXP MPL3115A2 Barometer. The flightcontrol is responsible for real time data processing and part of the feedback control, additionally it is responsible for managing our "overwrite remote control" ([PCB](https://github.com/ToolboxPlane/FlightControllerBoard), [Software](https://github.com/ToolboxPlane/FlightControllerSoftware)). |
+| ![Flightcontroller](../assets/img/flightcontroller.jpg "Flightcontroller") | At the heart of our plane is our self-developed flight controller. It is based around a Nucleo-L432KC development board, a Bosch-Sensortec BNO055 IMU and a NXP MPL3115A2 Barometer and Altimeter. The flightcontrol is responsible for real time data processing and the subordinate feedback control, additionally it is responsible for managing our "overwrite remote control" ([PCB](https://github.com/ToolboxPlane/FlightControllerBoard), [Software](https://github.com/ToolboxPlane/FlightControllerSoftware)). |
 
 ## Power-Distribution-Board
 
-| The power distribution board measures all voltages and currents and calculates the power consumption. The board consists of three Linear Technology LTC-2946 power managment ICs and an Microchip AtMega 48 ([PCB](https://github.com/ToolboxPlane/PowerDeliveryBoard), [Software](https://github.com/ToolboxPlane/PowerDistributionBoardSoftware)). | ![PDB](../assets/img/pdb.jpg "PDB") |
+| The power distribution board is responsible for creating all required voltage levels (5V and 3.3V) and measuring all voltages and currents, furthermore it calculates the power consumption and estimates the battery status. The board consists of three Linear Technology LTC-2946 power managment ICs and an Microchip AtMega 48 ([PCB](https://github.com/ToolboxPlane/PowerDeliveryBoard), [Software](https://github.com/ToolboxPlane/PowerDistributionBoardSoftware)). | ![PDB](../assets/img/pdb.jpg "PDB") |
 
 ## Decision Finding and Feedback-Control
 
