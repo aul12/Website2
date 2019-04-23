@@ -14,6 +14,8 @@ am also responsible for the software structure and the computer infrastructure.
 # RoboCup Junior
 From 2011 to 2016 i participated in [RoboCup Junior](https://junior.robocup.org/about/) (Soccer-Open League), with Team "Bodenseehaie" as the software team lead.
 In 2015 we won the german championship and participated at the worldcup in Hefei, China. In 2016 we won the overall worldcup with our self developed robots.
+
+To extend our testing capabilities i developed a complete end-to-end simulator using Electron and Web-GL. This allowed us to test software indepent of the hardware. The complete simulator is available on [Github](https://github.com/aul12/RoboCup-Simulation), licensed under GPLv3.
 ![RoboCup](../assets/img/robocup.jpg "RoboCup")
 
 # SerialToolbox
@@ -34,5 +36,5 @@ The data is received via udp from an esp8266, then optimal upsampling using lanc
 Due to the  very low resolution of the sensor (8x8 Pixel) and the quite low temperature difference of humans compared to the background this project was not successful but the code is still available on [GitHub](https://github.com/aul12/Amg8833Tests) (licensed under GPLv3).
 
 # Dungeon
-A 3D Dungeon Game written in Javascript using Three.js, this was a rewrite of a game i had programmed in school using C# (in 2D). The code is available on [GitHub](https://github.com/aul12/Dungeon) (licensed under GPLv3), the game is also hosted on [Github-Pages](aul12.github.io/Dungeon).
+A 3D Dungeon Game written in Javascript using WebGL, this was a rewrite of a game i had programmed in school using C# (in 2D). The code is available on [GitHub](https://github.com/aul12/Dungeon) (licensed under GPLv3), the game is also hosted on [Github-Pages](aul12.github.io/Dungeon).
 
