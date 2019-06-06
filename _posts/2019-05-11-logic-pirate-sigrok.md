@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using the Dangerous Prototypes Logic Pirate with Sigrok and Pulseview"
-date:   2019-04-29 22:49:00 +0200
+date:   2019-05-11 22:49:00 +0200
 categories: embedded
 ---
 
