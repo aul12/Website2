@@ -1,0 +1,51 @@
+digraph G {
+    fontname = "Helvetica"
+    fontsize = 8
+    rankdir="LR";
+    nodesep = "0.6"
+    splines=ortho
+
+    node [
+        fontname = "Helvetica"
+        fontsize = 8
+        shape = "record"
+    ]
+
+    edge [
+        fontname = "Helvetica"
+        fontsize = 8
+        arrowhead = "onormal"
+        labeldistance = 1.8
+    ]
+
+    nn [
+        label = "neural network"
+    ]
+
+    tanh [
+        label = "tanh"
+    ]
+
+    atanh [
+        label = "atanh"
+    ]
+
+    softmax [
+        label = "softmax"
+    ]
+
+    out [
+        label = "output"
+    ]
+
+    nn -> tanh
+    tanh -> atanh [
+        label = "output from OpenCV"
+    ]
+    atanh -> softmax [
+        label = "identity"
+    ]
+    softmax -> out [
+        label = "valid probability distribution"
+    ]
+}
