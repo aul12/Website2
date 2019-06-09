@@ -55,7 +55,7 @@ make release
 ```
 now you can either add `build/Release` to your `$PATH` or run `sudo make install` in the `build/Release` directory (if you install it system wide you may need to run `ldconfig` with root permissions after installing to reload the loader-cache).
 
-## Future improvements: out of the box support indepent of floating point unit
+## Future improvements: out of the box support independent of floating point unit
 There is a wide range of STM32-Microcontrollers using a wide range of Cortex-M cores with different hardware accelerators for floating point calculations.
 From the basic STM32F0 series using an Cortex-M0 chip without hardware support for floating point calulcations, up to the latest STM32L7 with support for advanced SIMD (Single Instruction Multiple Data, a mechanism used for fast processing of vectorized data) calulcations a lot of different compiler flags need to be set in the CMake config.
 
