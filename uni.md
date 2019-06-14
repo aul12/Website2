@@ -4,7 +4,7 @@ title: University
 permalink: /uni/
 ---
 
-| ![Title](../assets/img/cv.jpg) | ![Title](../assets/img/gpet.png) |![Title](../assets/img/neuro.jpg) |![Title](../assets/img/studying.jpg) |
+| ![Title](../assets/img/cv.jpg){:class="img-responsive" width="100%"} | ![Title](../assets/img/gpet.png){:class="img-responsive" width="100%"} |![Title](../assets/img/neuro.jpg){:class="img-responsive" width="100%"} |![Title](../assets/img/studying.jpg){:class="img-responsive" width="100%"} |
 
 **Disclaimer:** This is just a collection of solutions for worksheets which are all in german, thus i have decided to keep this page in german aswell.
 

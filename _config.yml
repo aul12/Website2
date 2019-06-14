@@ -8,12 +8,17 @@
 # Site settings
 title: aul12
 email: paul.nykiel@gmail.com
+bio: > # this means to ignore newlines until "baseurl:"
+    Developer with focus on real time perception (computer vision and machine learning) and embedded. Also doing some desktop and full stack stuff.
 description: > # this means to ignore newlines until "baseurl:"
     Developer with focus on real time perception (computer vision and machine learning) and embedded. Also doing some desktop and full stack stuff.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "aul12.me" # the base hostname & protocol for your site
 twitter_username: fuhapaul
 github_username:  aul12
+locale: en_US
+
+background_image:   /assets/img/title.jpg #/images/bg.jpg
 
 # Build settings
 markdown: kramdown

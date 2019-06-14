@@ -1,28 +1,83 @@
 ---
-layout: default
+layout: null
+title: Home
+description: Welcome to my personal webpage. My name is Paul Nykiel im a student living in Ulm, Germany. I'm doing software development with focus on real time perception (computer vision and machine learning) and embedded systems. 
+    I'm also interested in desktop and full-stack web-development.
+sitemap:
+    priority: 1.0
+    lastmod: 2019-06-13
+    changefreq: weekly
 ---
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {% include head.html %}
 
-<div class="home">
-    
-    <img src="assets/img/title.jpg">
-    <p>
-    <p>Welcome to my personal webpage. My name is Paul Nykiel im a student living in Ulm, Germany. I'm doing software development with focus on real time perception (computer vision and machine learning) and embedded systems. 
-    I'm also interested in desktop and full-stack web-development.</p>
 
-    <h1 class="page-heading">Blog-Posts</h1>
+	</head>
+	<body class="is-loading">
 
-    <ul class="post-list">
-        {% for post in site.posts %}
-        <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
 
-            <h2>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
-        </li>
-        {% endfor %}
-    </ul>
+				<!-- Intro -->
+					<div id="intro">
+            <h1>aul12.me</h1>
+                        <p style="background-color: black">Welcome to my personal webpage. My name is Paul Nykiel im a student living in Ulm, Germany. I'm doing software development with focus on real time perception (computer vision and machine learning) and embedded systems.</p>
+                        <p style="background-color: black">I'm also interested in desktop- and full-stack web-development.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+				<!-- Header -->
+					<header id="header">
+						<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+					</header>
 
-</div>
+				<!-- Nav -->
+					<nav id="nav">
+
+            {% include nav.html %}
+
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Posts -->
+							<section class="posts">
+                {% for post in site.posts%}
+                {% assign mod3 = forloop.index | modulo: 3 %}
+  								<article>
+  									<header>
+  										<span class="date">{{ post.date | date_to_string }}</span>
+  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+  									</header>
+  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+  									<p>{{ post.excerpt }}</p>
+  									<ul class="actions">
+  										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
+  									</ul>
+  								</article>
+                {% endfor %}
+
+							</section>
+					</div>
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+		<!-- Scripts -->
+		{% include scripts-main.html %}
+    {% include tracking.html %}
+
+	</body>
+</html>

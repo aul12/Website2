@@ -7,7 +7,7 @@ categories: embedded
 
 For configuring an STM32 microcontroller there is arguably no easier way to configure the chip and periphery than using [STM32CubeMx](https://www.st.com/en/development-tools/stm32cubemx.html) (in the following refered to as CubeMx). Sadly it is only possible to export the code to a small selection of proprietary IDEs, it is neither possible to use the Code with one of the important C/C++ IDEs (CLion, QtCreator, Code::Blocks, Visual Studio,...) or to use any editor (vim, emacs, nano,...) and an external build tool to build the project. This also limits the ability to integrate the build process in some form of continuous integration.
 
-![CubeMx](../../../../../assets/img/cubemx-cmake/cubemx.png)
+![CubeMx](../../../../../assets/img/cubemx-cmake/cubemx.png){:class="img-responsive" width="100%"}
 
 For CLion there is at least a [plugin](https://blog.jetbrains.com/clion/2016/06/clion-for-embedded-development/) which generates a [cmake](https://cmake.org/) configuration from a CubeMx project. The plugin got even [integrated into CLion](https://blog.jetbrains.com/clion/2019/02/clion-2019-1-eap-clion-for-embedded-development-part-iii/) as of version 2019.1
 
@@ -17,7 +17,7 @@ This plugin is nice if you are planning to use CLion, but brings quite a lot of 
 This tutorial assumes you have already installed the `arm-none-eabi-gcc` compiler and cmake (minimum version 3.10). Furthermore it assumes that you have already created a project and done all the configuration in CubeMx.
 
 To generate the sources in the right directory structure you need to change the Toolchain-Target of the CubeMx project. Do this by clicking on Project-Settings > Project > Toolchain / IDE and select `SW4STM32` in the dropdown menu.
-![CubeMx Config](../../../../../assets/img/cubemx-cmake/cubemx_config.png)
+![CubeMx Config](../../../../../assets/img/cubemx-cmake/cubemx_config.png){:class="img-responsive" width="100%"}
 
 To use this script you first need to clone the script from the github repo at [https://github.com/aul12/CubeMxCMake](https://github.com/aul12/CubeMxCMake).
 Next you can run the script (for this python3, which should be installed on nearly every system, is required):
