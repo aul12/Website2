@@ -3,7 +3,7 @@ layout: page
 title: Toolbox Plane
 permalink: /tbplane/
 ---
-
+# Toolbox Plane
 ## Developing an autonomous plane
 A friend and i decided to develop and build our own flightcontrol platform for a model airplane.  
 We started the project in 2017 and already had multiple test flights to test different components.

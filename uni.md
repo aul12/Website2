@@ -3,6 +3,7 @@ layout: page
 title: University 
 permalink: /uni/
 ---
+# University
 
 | ![Title](../assets/img/cv.jpg){:class="img-responsive" width="100%"} | ![Title](../assets/img/gpet.png){:class="img-responsive" width="100%"} |![Title](../assets/img/neuro.jpg){:class="img-responsive" width="100%"} |![Title](../assets/img/studying.jpg){:class="img-responsive" width="100%"} |
 
