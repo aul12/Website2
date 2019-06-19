@@ -9,6 +9,7 @@ I participated for two years at the [Carolo-Cup](https://wiki.ifr.ing.tu-bs.de/c
 We scored the third place in 2018 and won the Cup in 2019.
 I developed the road-marking detection, the sign detection and the obstacle detection for use in the vehicle. I 
 am also responsible for the software structure and the computer infrastructure.
+
 ![Carolo-Cup](../assets/img/carolo.jpg "Carolo-Cup"){:class="img-responsive" width="100%"}
 
 ## RoboCup Junior
@@ -16,6 +17,7 @@ From 2011 to 2016 i participated in [RoboCup Junior](https://junior.robocup.org/
 In 2015 we won the german championship and participated at the worldcup in Hefei, China. In 2016 we won the overall worldcup with our self developed robots.
 
 To extend our testing capabilities i developed a complete end-to-end simulator using Electron and Web-GL. This allowed us to test software indepent of the hardware. The complete simulator is available on [Github](https://github.com/aul12/RoboCup-Simulation), licensed under GPLv3.
+
 ![RoboCup](../assets/img/robocup.jpg "RoboCup"){:class="img-responsive" width="100%"}
 
 ## SerialToolbox
@@ -23,6 +25,7 @@ During the initial phase of software development for a microcontroller i often f
 This is why i developed SerialToolbox, to not only be able to send and receive data but also to do this using a multitude of different representations.
 SerialToolbox is inspired by the program HTerm (which was sadly discontinued in 2008). It is written in modern C++17 using QT, the software is completly 
 opensource (Licensed under GPLv3) and available on [GitHub](https://github.com/aul12/SerialToolbox).
+
 ![SerialToolbox](../assets/img/SerialToolbox.png "SerialToolbox"){:class="img-responsive" width="100%"}
 
 ## eduJS
@@ -36,5 +39,5 @@ The data is received via udp from an esp8266, then optimal upsampling using lanc
 Due to the  very low resolution of the sensor (8x8 Pixel) and the quite low temperature difference of humans compared to the background this project was not successful but the code is still available on [GitHub](https://github.com/aul12/Amg8833Tests) (licensed under GPLv3).
 
 ## Dungeon
-A 3D Dungeon Game written in Javascript using WebGL, this was a rewrite of a game i had programmed in school using C# (in 2D). The code is available on [GitHub](https://github.com/aul12/Dungeon) (licensed under GPLv3), the game is also hosted on [Github-Pages](aul12.github.io/Dungeon).
+A 3D Dungeon Game written in Javascript using WebGL, this was a rewrite of a game i had programmed in school using C# (in 2D). The code is available on [GitHub](https://github.com/aul12/Dungeon) (licensed under GPLv3), the game is also hosted on [Github-Pages](https://aul12.github.io/Dungeon).
 
