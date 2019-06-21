@@ -33,7 +33,7 @@ A simple HTML-WYSIWYG-Editor with a JS editor for creating simple webapps using 
 Drive](https://docs.google.com/presentation/d/16bmZYIa_k7B3Fv3K5naTQL9vzd_MBaoVq_4Ty2uxOfY/edit?usp=sharing).
 
 ## Tests using an AMG-8833 thermal imager
-This was an test to detect the presence and movement of humanns using an [AMG8833](https://na.industrial.panasonic.com/products/sensors/sensors-automotive-industrial-applications/grid-eye-infrared-array-sensor/series/grid-eye-high-performance-type-amg8833/ADI8005/model/AMG8833) thermal imager. 
+This was an test to detect the presence and movement of humans using an [AMG8833](https://na.industrial.panasonic.com/products/sensors/sensors-automotive-industrial-applications/grid-eye-infrared-array-sensor/series/grid-eye-high-performance-type-amg8833/ADI8005/model/AMG8833) thermal imager. 
 The data is received via udp from an esp8266, then optimal upsampling using lanczos interpolation is applied. For background surpression a fast temporal median filter is used. 
 
 Due to the  very low resolution of the sensor (8x8 Pixel) and the quite low temperature difference of humans compared to the background this project was not successful but the code is still available on [GitHub](https://github.com/aul12/Amg8833Tests) (licensed under GPLv3).
