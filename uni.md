@@ -11,6 +11,8 @@ permalink: /uni/
 
 ## Informatik
 ### Übungsblätter
+ * [Softwaregrundprojekt (SoPra)](https://github.com/SoPra-Team-10/)
+ * [Zusammenfassung: Architektur Eingebetteter Systeme](https://github.com/aul12/Zusammenfassung-AES)
  * [Grundlagen der Rechnerarchitektur](https://github.com/aul12/GdRa)
  * [Einzelabgaben für das Softwaregrundprojekt](https://github.com/aul12/SoPra)
  * [Einführung in die Neuroinformatik](https://github.com/aul12/Einfuehrung-in-die-Neuroinformatik)
