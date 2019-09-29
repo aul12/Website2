@@ -5,16 +5,17 @@ permalink: /portfolio/
 ---
 # Portfolio
 ## Carolo Cup
-I participated for two years at the [Carolo-Cup](https://wiki.ifr.ing.tu-bs.de/carolocup/en/carolo-cup) with Team "Spatzenhirn".
+I participated for three years at the [Carolo-Cup](https://wiki.ifr.ing.tu-bs.de/carolocup/en/carolo-cup) with Team "Spatzenhirn".
 We scored the third place in 2018 and won the Cup in 2019.
-I developed the road-marking detection, the sign detection and the obstacle detection for use in the vehicle. I 
-am also responsible for the software structure and the computer infrastructure.
+I developed the road-marking detection, the sign detection and the obstacle detection for use in the vehicle. 
+I was also responsible for the software structure, the computer infrastructure and the software project management.
 
 ![Carolo-Cup](../assets/img/carolo.jpg "Carolo-Cup"){:class="img-responsive" width="100%"}
 
 ## RoboCup Junior
 From 2011 to 2016 i participated in [RoboCup Junior](https://junior.robocup.org/about/) (Soccer-Open League), with Team "Bodenseehaie" as the software team lead.
 In 2015 we won the german championship and participated at the worldcup in Hefei, China. In 2016 we won the overall worldcup with our self developed robots.
+All software developed by our team is released as free software: [the main robot code](https://github.com/aul12/RobotDebug), [an algorithm for detecting the orange ball](https://github.com/aul12/ROBOT) and [a desktop program for debugging](https://github.com/aul12/RobotDebug). More information can be found in [this blog-post](http://aul12.me/robocup/2019/09/13/robocup-foss.html).
 
 To extend our testing capabilities i developed a complete end-to-end simulator using Electron and Web-GL. This allowed us to test software indepent of the hardware. The complete simulator is available on [Github](https://github.com/aul12/RoboCup-Simulation), licensed under GPLv3.
 
