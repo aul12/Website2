@@ -12,7 +12,7 @@ Not only datacentre based applications, such as the ones of Google and Facebook,
 Especially devices on the edge of the internet are limited in computation power and often do not provide accelerator devices such as GPUs or dedicated neural network accelerators.
 Thus it is of great importance to have frameworks and libraries which enable a quick inference of neural networks on a normal CPU.
 
-In this post i will compare the inference of two neural networks with different implementations, namely the [OpenCV DNN-Module (OpenCV Version 3.4.8)](https://docs.opencv.org/3.4.8/d2/d58/tutorial_table_of_content_dnn.html), [CppFlow](https://github.com/aul12/cppflow) which is a wrapper around the TensorFlow C-API, and [TensorFlow-Lite](https://www.tensorflow.org/lite) which is flavour of the TensorFlow framework specialized on inference at the edge.
+In this post i will compare the inference of two neural networks with different implementations, namely the [OpenCV DNN-Module (OpenCV Version 3.4.8)](https://docs.opencv.org/3.4.8/d2/d58/tutorial_table_of_content_dnn.html), [CppFlow](https://github.com/aul12/cppflow) which is a wrapper around the TensorFlow C-API, and [TensorFlow-Lite](https://www.tensorflow.org/lite) (TfLite) which is flavour of the TensorFlow framework specialized on inference at the edge.
 
 ## Setup
 In the following section the setup which was used to measure the performance is explained.
@@ -42,13 +42,13 @@ The CNN consists of four convolutional layers followed by a max-pooling layer ea
 The benchmark was run on a laptop with a Intel Core i5-3230M CPU, running Ubuntu 18.04.3 with Kernel Version 5.0.0-37. The laptop does not provide a dedicated graphics card.
 
 ### Test script
-All measurements have been done using a [small C++ Script](https://github.com/aul12/TensorflowInferenceBenchmark), the scripts first loads the model (saved either as a protobuf file for CppFlow and OpenCV, or as a tflite file for TensorFlow-Lite), then runs the model ten times (TensorFlow allocates the memory on the first run, so the first run is a lot slower) and then runs the model 1000 times, each time with random input data.
+All measurements have been done using a [small C++ Script](https://github.com/aul12/TensorFlowInferenceBenchmark), the scripts first loads the model (saved either as a protobuf file for CppFlow and OpenCV, or as a tflite file for TensorFlow-Lite), then runs the model ten times (TensorFlow allocates the memory on the first run, so the first run is a lot slower) and then runs the model 1000 times, each time with random input data.
 The random input data simulates real data and thus makes sure that no caching or other optimizations are influencing the inference.
 Over the 1000 runs the runtime of the inference is measures, from this data the average (mean) runtime, the standarddeviation of the runtime, the minimal runtime and the maximal runtime is calculated.
 
 The program is compiled with GCC-8 using maximal optimization (`-O3`) for this target (`-march=native -mtune=native`).
 OpenCV is compiled from source to use all instructions available on the CPU, especially vector instructions (SIMD).
-For Tensorflow-Lite there is an option to set the number of threads. 
+For TensorFlow-Lite there is an option to set the number of threads. 
 To test the influence of this parameter the benchmark is done with one to eight threads.
 
 ## Results
@@ -89,22 +89,22 @@ To test the influence of this parameter the benchmark is done with one to eight 
 
 ## Conclusion
 For both networks OpenCV yields on average the lowest inference time, both times closely followed by CppFlow. 
-The differences between those two frameworks can mainly be attributed to the optimized instructions (like SIMD), that OpenCV uses at it was compiled from source, but CppFlow does not use as the Tensorflow C-API was installed as a binary which needs to run on a wide variety of systems.
+The differences between those two frameworks can mainly be attributed to the optimized instructions (like SIMD), that OpenCV uses at it was compiled from source, but CppFlow does not use as the TensorFlow C-API was installed as a binary which needs to run on a wide variety of systems.
 
-One advantage of CppFlow over OpenCV, is that CppFlow is guaranteed to support all operations that Tensorflow supports. For OpenCV there are some operations which are not supported, in this case the model can not be loaded.
+One advantage of CppFlow over OpenCV, is that CppFlow is guaranteed to support all operations that TensorFlow supports. For OpenCV there are some operations which are not supported, in this case the model can not be loaded.
 
-The Tensorflow-Lite implementation is slower for both of the networks. For the Semantic Segmentation the difference is between a factor of 1.6 and 1.3, for the classification task the difference is much larger, the factor is between nearly 32 and 15. 
+The TensorFlow-Lite implementation is slower for both of the networks. For the Semantic Segmentation the difference is between a factor of 1.6 and 1.3, for the classification task the difference is much larger, the factor is between nearly 32 and 15. 
 Especially for the second task the difference in inference speed is huge.
-Additionally it can be noted for Tensorflow-Lite that the runtime is mostly not influenced by the number of cores.
+Additionally it can be noted for TensorFlow-Lite that the runtime is mostly not influenced by the number of cores.
 Intuitively the runtime should be inverse proportional to the runtime as most of the operations can be easily parallelized (that is the reason for the speed and thus popularity of GPUs).
 
-To verify the correctness of the Tensorflow-Lite installation the same measurements have been made on a different computer, using the r1.15 version of TensorFlow and TensorFlow-Lite (Commit `590d6ee`). 
+To verify the correctness of the TensorFlow-Lite installation the same measurements have been made on a different computer, using the r1.15 version of TensorFlow and TensorFlow-Lite (Commit `590d6ee`). 
 The computer is equipped with a faster CPU, an Intel Core i7-6700, so a faster inference of the CNN was expected.
 Considering the absolute runtime the inference took about half the time when compared to the same setup on my laptop.
 This improvement is primarily due to the faster CPU, overall the inference on my laptop is still about ten times faster when using OpenCV or CppFlow, even though my laptop is slower.
 
-When researching this behaviour of Tensorflow-Lite the only similar problems are bug reports on GitHub which are from 2017 and 2018 [6]. 
-The cause of the discrepancy could not be found so as a result Tensorflow-Lite can, for now, not be recommended if it is possible to use an alternative such as OpenCV or CppFlow.
+When researching this behaviour of TensorFlow-Lite the only similar problems are bug reports on GitHub which are from 2017 and 2018 [6]. 
+The cause of the discrepancy could not be found so as a result TensorFlow-Lite can, for now, not be recommended if it is possible to use an alternative such as OpenCV or CppFlow.
 
 ## References
  * [1] A. L. Hodgkin, A. F. Huxley: A Quantitative Description of Membrane Current and its Application to Conduction and Excitation in Nerve. In: The Journal of Physiology. Band 117, 1952, S. 500–544
