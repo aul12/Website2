@@ -9,8 +9,13 @@ permalink: /uni/
 
 **Disclaimer:** This is just a collection of solutions for worksheets which are all in german, thus i have decided to keep this page in german aswell.
 
+## Bachelorarbeit
+ * [Fast Object Detection in Dense Point Clouds](https://github.com/aul12/FastObjectDetectionInDensePointClouds)
+
 ## Informatik
 ### Übungsblätter
+ * [Pattern Recognition](https://github.com/aul12/PatternRecognition)
+ * [Sicherheit in IT-Systemen](https://github.com/aul12/SicherheitInItSystemen)
  * [Softwaregrundprojekt (SoPra)](https://github.com/SoPra-Team-10/)
  * [Zusammenfassung: Architektur Eingebetteter Systeme](https://github.com/aul12/Zusammenfassung-AES)
  * [Grundlagen der Rechnerarchitektur](https://github.com/aul12/GdRa)
