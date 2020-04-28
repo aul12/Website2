@@ -16,6 +16,8 @@ In the simplest form the accelerator can be plugged into any available USB port 
 For a better integration there are also modules available which fit into a normal M.2 socket, 
 which is usually used for SSDs. This modules communicates with the host computer via PCI-Express.
 
+![The Coral USB-Accelerator](../../../../../assets/img/edgetpu-cpp.png){:class="img-responsive" width="50%"}
+
 The integration of such an EdgeTPU is easy when considering the required hardware changes, especially when
 comparing it to other accelerators such as GPUs. 
 But the integration into the software which should use the TPU is not as easy.
