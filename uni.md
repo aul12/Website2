@@ -7,34 +7,38 @@ permalink: /uni/
 
 | ![Title](../assets/img/cv.jpg){:class="img-responsive" width="100%"} | ![Title](../assets/img/gpet.png){:class="img-responsive" width="100%"} |![Title](../assets/img/neuro.jpg){:class="img-responsive" width="100%"} |![Title](../assets/img/studying.jpg){:class="img-responsive" width="100%"} |
 
-**Disclaimer:** This is just a collection of solutions for worksheets which are all in german, thus i have decided to keep this page in german aswell.
-
-## Bachelorarbeit
+## Bachelorthesis
  * [Fast Object Detection in Dense Point Clouds](https://github.com/aul12/FastObjectDetectionInDensePointClouds)
 
-## Informatik
-### Übungsblätter
+## Computer Science
+### Exercises
  * [Pattern Recognition](https://github.com/aul12/PatternRecognition)
- * [Sicherheit in IT-Systemen](https://github.com/aul12/SicherheitInItSystemen)
- * [Softwaregrundprojekt (SoPra)](https://github.com/SoPra-Team-10/)
- * [Zusammenfassung: Architektur Eingebetteter Systeme](https://github.com/aul12/Zusammenfassung-AES)
- * [Grundlagen der Rechnerarchitektur](https://github.com/aul12/GdRa)
- * [Einzelabgaben für das Softwaregrundprojekt](https://github.com/aul12/SoPra)
- * [Einführung in die Neuroinformatik](https://github.com/aul12/Einfuehrung-in-die-Neuroinformatik)
+ * [Sicherheit in IT-Systemen (DE)](https://github.com/aul12/SicherheitInItSystemen)
+ * [Softwaregrundprojekt (SoPra) (DE)](https://github.com/SoPra-Team-10/)
+ * [Grundlagen der Rechnerarchitektur (DE)](https://github.com/aul12/GdRa)
+ * [Einzelabgaben für das Softwaregrundprojekt (DE)](https://github.com/aul12/SoPra)
+ * [Einführung in die Neuroinformatik (DE)](https://github.com/aul12/Einfuehrung-in-die-Neuroinformatik)
  * [Computer-Vision-I](https://github.com/aul12/Computer-Vision-I)
- * [Grundlagen der Betriebssysteme](https://github.com/aul12/GdBS)
- * [Systemnahe Software mit C](https://github.com/aul12/Aufgaben-Systemnahe-Software)
- * [Einführung in die Informatik](https://github.com/aul12/EidI-Uni-Ulm)
+ * [Grundlagen der Betriebssysteme (DE)](https://github.com/aul12/GdBS)
+ * [Systemnahe Software mit C (DE)](https://github.com/aul12/Aufgaben-Systemnahe-Software)
+ * [Einführung in die Informatik (DE)](https://github.com/aul12/EidI-Uni-Ulm)
 
-### Tools und nützliche Programme
- * [Algorithmus von Quine und McCluskey (Logikminimierung)](https://github.com/aul12/QuineMcCluskey)
- * [Pseudocode aus JS Code](https://github.com/aul12/Pseudify)
- * [Konverter für verschiedene Basen und IEEE-754 (float)](https://github.com/aul12/HexToDecToBinToAsciiToAnything)
+### Tools
+ * [Algorithm of Quine and McCluskey (Logicminimization)](https://github.com/aul12/QuineMcCluskey)
+ * [JS to Pseudocode Converter](https://github.com/aul12/Pseudify)
+ * [Binary and IEEE-754 Calculator](https://github.com/aul12/HexToDecToBinToAsciiToAnything)
 
-## Elektrotechnik
- * [Software für den praktischen Teil der Vorlesung praktischer Einstieg in die Elektronikentwicklung](https://github.com/aul12/ARDF-Firmware)
- * [Praktikumsberichte GPET](https://github.com/aul12/Praktikumsberichte-GPET)
+### Summarys / Curse Notes
+ * [Pattern Recognition](https://github.com/aul12/Summary-Pattern-Recognition)
+ * [Sicherheit in IT-Systemen (DE)](https://github.com/aul12/Zusammenfassung-Sicherheit-in-IT-Systemen)
+ * [Architektur Eingebetteter Systeme (DE)](https://github.com/aul12/Zusammenfassung-AES)
 
-## Mathematik
- * [Zusammenfassung: Höhere Mathematik](https://github.com/aul12/hmZusammenfassung)
- * [Programm zur Generierung von Plots](https://github.com/aul12/PlotStuff)
+## Electrical Engineering
+ * [Summary : Electronic System Design using C and System C](https://github.com/aul12/Summary-Electronic-System-Design-using-C-and-System-C)
+ * [Zusammenfassung:  Filter- und Trackingverfahren (DE)](https://github.com/aul12/Zusammenfassung-Filter-und-Trackingverfahren) 
+ * [Software for the module "Electronic Design in Practise"](https://github.com/aul12/ARDF-Firmware)
+ * [Praktikumsberichte GPET (DE)](https://github.com/aul12/Praktikumsberichte-GPET)
+
+## Mathematics
+ * [Zusammenfassung: Höhere Mathematik (DE)](https://github.com/aul12/hmZusammenfassung)
+ * [Framework for Plots in C++](https://github.com/aul12/PlotStuff)
