@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Comparing the inference performance of neural networks with and without quantization"
+title:  "Comparing the Inference Performance of Neural Networks with and Without Quantization"
 date:   2020-06-18 16:00:00 +0200
 categories: machinelearning
 ---
