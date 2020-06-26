@@ -2,7 +2,7 @@
 layout: post
 title:  "Toolbox-Plane PCBs"
 date:   2019-04-29 22:49:00 +0200
-categories: tbplane embedded
+categories: tbplane
 ---
 
 After having several problems with our last PCB-Stack used in the [Toolbox-Plane](https://aul12.me/tbplane) (in no particular order: large size, problems with the mcu not starting, non standardized platform) we decided to design three new PCBs for our plane. 
