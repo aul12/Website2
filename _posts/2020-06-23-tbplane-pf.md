@@ -12,6 +12,8 @@ sensor fusion, route planning and some parts of the feedback-control. Additional
 communication network: the flight computer communications with the flight controller, the power distribution board, 
 the primary remote and the base station.
 
+This is part 1 of a series of posts, this post will explain our updated state estimation using a particle filter.
+
 ## State Estimation using a Particle Filter
 The plane is equipped with a lot of sensors, the important sensors are:
  * an IMU
