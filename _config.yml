@@ -9,9 +9,9 @@
 title: aul12
 email: paul.nykiel@gmail.com
 bio: > # this means to ignore newlines until "baseurl:"
-    Software developer with focus on real time environment perception, embedded systems and robotics.
+    Engineer and software developer with interests in robotics, embedded systems and systems engineering.
 description: > # this means to ignore newlines until "baseurl:"
-    Software developer with focus on real time environment perception, embedded systems and robotics.
+    Engineer and software developer with interests in robotics, embedded systems and systems engineering.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "aul12.me" # the base hostname & protocol for your site
 twitter_username: fuhapaul
